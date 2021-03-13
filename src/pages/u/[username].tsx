@@ -51,7 +51,7 @@ export default function User() {
                     </div>
                     <div className="hidden w-4/12 overflow-hidden bg-white rounded lg:block">
                         <div className="flex items-center justify-center p-3 bg-blue-700">
-                            <img src="https://cdn.pixabay.com/photo/2019/06/25/04/40/light-4297386_1280.jpg" alt="user" className="w-12 h-12 rounded-full"/>
+                            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="user" className="w-12 h-12 rounded-full"/>
                         </div>
                         <div className="flex flex-col items-center justify-center m-2">
                             <p className="my-1">{data.username}</p>
