@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.animatedInput{
+    line-height: 0.3rem;
+    transition: .2s;
+}
+.animatedLabel{
+    transition: .2s;
+}
+.animatedLabel.valued{
+    transition: .2s;
+    font-size: .6rem;
+    text-transform: uppercase;
+    -webkit-transform: translate3d(0,-10px,0) scale(.93333333);
+    transform: translate3d(0,-10px,0) scale(.93333333);
+    line-height: 14px;
+}
+.animatedInput:focus ~ .animatedLabel{
+    transition: .2s;
+    font-size: .6rem;
+    text-transform: uppercase;
+    -webkit-transform: translate3d(0,-10px,0) scale(.93333333);
+    transform: translate3d(0,-10px,0) scale(.93333333);
+    line-height: 14px;
+}
+@layer components{
+    .button{
+        @apply  inline-block w-20 py-1 text-sm font-bold text-center uppercase border rounded cursor-pointer lg:w-36;
+    }
+    .button.blue {
+        @apply text-white bg-blue-900 border-blue-900;
+    }
+    .button.blue:hover {
+        @apply bg-blue-800 border-blue-800;
+    }
+    .button.blue.hollow {
+        @apply text-blue-900 bg-transparent border-blue-900;
+    }
+    .button.blue.hollow:hover {
+        @apply bg-blue-50;
+    }
+}
