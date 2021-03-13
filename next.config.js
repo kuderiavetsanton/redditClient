@@ -11,6 +11,5 @@ module.exports = {
     
       return config
     },images: {
-      domains: ['cdn.pixabay.com',process.env.APP_DOMAIN],
     },
 }
